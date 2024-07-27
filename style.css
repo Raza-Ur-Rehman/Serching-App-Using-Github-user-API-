@@ -63,6 +63,7 @@ section {
     }
 }
 .card {
+    /* max-width: 500px; */
     display: flex;
     justify-items: center;
     align-items: center;
