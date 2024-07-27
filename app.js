@@ -32,15 +32,14 @@ search.addEventListener("keyup", (event) => {
 
 
 function displayData(data) {
-    const userDiv = document.getElementById("box");
-    // userDiv.innerHTML = "";
-    userDiv.innerHTML = `
+    const box = document.getElementById("box");
+    box.innerHTML = `
     <div class="card">
       <img src="${data.avatar_url}" alt="User Avatar" class="card-img">
       <div class="profile-info">
         <h2 class="title">${data.name}</h2>
         <p class="user-name">${data.login}</p>
-        <p class="bio"> ${data.bio}</p>
+        <p class="bio"> ${data.bio} </p>
         <div class="follow-box">
                     <i class="fa-solid fa-users"></i>
                     <span>${data.followers} Follower</span>
